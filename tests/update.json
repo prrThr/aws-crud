@@ -1,0 +1,6 @@
+{
+  "pathParameters": {
+    "id": "id-do-item-ja-existente-no-dynamodb"
+  },
+  "body": "{\"title\": \"Título Atualizado\", \"description\": \"Descrição atualizada.\", \"date\": \"2025-07-01\"}"
+}

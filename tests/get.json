@@ -1,0 +1,5 @@
+{
+  "pathParameters": {
+    "id": "id-de-um-item-ja-existente-no-dynamodb"
+  }
+}
