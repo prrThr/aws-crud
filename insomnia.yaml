@@ -1,0 +1,149 @@
+type: collection.insomnia.rest/5.0
+name: aws-crud
+meta:
+  id: wrk_51238bbc2f6347e4bce1f6b68be8c750
+  created: 1751125183298
+  modified: 1751125183298
+collection:
+  - url: https://ql7qqx6gy1.execute-api.us-east-1.amazonaws.com/tasks/c4bfaf62-8ad4-4f34-9ec4-698b0532b3c3
+    name: Get
+    meta:
+      id: req_fb4647a4aa384320bbeeee019469dc01
+      created: 1751143459676
+      modified: 1751144345503
+      isPrivate: false
+      sortKey: -1751143459676
+    method: GET
+    body:
+      mimeType: application/json
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://ql7qqx6gy1.execute-api.us-east-1.amazonaws.com/tasks/date?date=2025-06-27
+    name: Get Date
+    meta:
+      id: req_c30c8d0210ba45a8b5b27938618fd0de
+      created: 1751144207314
+      modified: 1751144342197
+      isPrivate: false
+      sortKey: -1751144207314
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://ql7qqx6gy1.execute-api.us-east-1.amazonaws.com/tasks
+    name: Create
+    meta:
+      id: req_ea54ee3c3c4746f29826c087e4928e41
+      created: 1751144323275
+      modified: 1751144696638
+      isPrivate: false
+      sortKey: -1751144323275
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "title": "Inserido via Insomnia",
+          "description": "Descrição Insomnia",
+          "date": "2025-06-28"
+        }
+    parameters:
+      - id: pair_ad5c5579d3f94f26a2e84b810f165052
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://ql7qqx6gy1.execute-api.us-east-1.amazonaws.com/tasks/c4bfaf62-8ad4-4f34-9ec4-698b0532b3c3
+    name: Update
+    meta:
+      id: req_6ed9539f487743e4b353690d7c777d45
+      created: 1751144556061
+      modified: 1751144587407
+      isPrivate: false
+      sortKey: -1751144556061
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "title": "Título Atualizado",
+          "description": "Descrição atualizada com sucesso",
+          "date": "2025-06-30"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://ql7qqx6gy1.execute-api.us-east-1.amazonaws.com/tasks/c4bfaf62-8ad4-4f34-9ec4-698b0532b3c3
+    name: Delete
+    meta:
+      id: req_4a8f8197ae0f43849251e357a97b0d9f
+      created: 1751144620720
+      modified: 1751144634707
+      isPrivate: false
+      sortKey: -1751144620720
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c655765831770dc61b68cbb221cb9eb8ce296fe3
+    created: 1751125183300
+    modified: 1751125183300
+environments:
+  name: Base Environment
+  meta:
+    id: env_c655765831770dc61b68cbb221cb9eb8ce296fe3
+    created: 1751125183299
+    modified: 1751125432726
+    isPrivate: false
+  data:
+    aws: "{https://u4edhehimekepy2rtmvpfnol4m0yxsmi.lambda-url.us-east-1.on.aws/}"

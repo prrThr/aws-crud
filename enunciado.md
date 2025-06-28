@@ -35,3 +35,7 @@ A API deve possibilitar:
 ### 3. Teste rápido
 - **a.** Use Postman ou outra ferramenta equivalente para chamar as rotas e testar. Veja os logs no
 CloudWatch se preferir.
+
+## Entrega
+ - A entrega deve ser em PDF, o qual deve conter as respostas para as perguntas e os links para o repositório do código e para um vídeo de apresentação no trabalho. No vídeo deve ser apresentado o ocódigo e o funcionamento do sistema.
+
