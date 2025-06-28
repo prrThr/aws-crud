@@ -5,12 +5,12 @@ meta:
   created: 1751125183298
   modified: 1751125183298
 collection:
-  - url: https://ql7qqx6gy1.execute-api.us-east-1.amazonaws.com/tasks/c4bfaf62-8ad4-4f34-9ec4-698b0532b3c3
+  - url: "{{ _.baseURL }}/tasks/f2f27f9b-d9e6-4955-92ff-5962070cf8d7"
     name: Get
     meta:
       id: req_fb4647a4aa384320bbeeee019469dc01
       created: 1751143459676
-      modified: 1751144345503
+      modified: 1751146977804
       isPrivate: false
       sortKey: -1751143459676
     method: GET
@@ -29,12 +29,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://ql7qqx6gy1.execute-api.us-east-1.amazonaws.com/tasks/date?date=2025-06-27
+  - url: "{{ _.baseURL }}/tasks/date?date=2025-06-27"
     name: Get Date
     meta:
       id: req_c30c8d0210ba45a8b5b27938618fd0de
       created: 1751144207314
-      modified: 1751144342197
+      modified: 1751146972208
       isPrivate: false
       sortKey: -1751144207314
     method: GET
@@ -49,12 +49,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://ql7qqx6gy1.execute-api.us-east-1.amazonaws.com/tasks
+  - url: "{{ _.baseURL }}/tasks"
     name: Create
     meta:
       id: req_ea54ee3c3c4746f29826c087e4928e41
       created: 1751144323275
-      modified: 1751144696638
+      modified: 1751146962111
       isPrivate: false
       sortKey: -1751144323275
     method: POST
@@ -82,12 +82,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://ql7qqx6gy1.execute-api.us-east-1.amazonaws.com/tasks/c4bfaf62-8ad4-4f34-9ec4-698b0532b3c3
+  - url: "{{ _.baseURL }}/tasks/c4bfaf62-8ad4-4f34-9ec4-698b0532b3c3"
     name: Update
     meta:
       id: req_6ed9539f487743e4b353690d7c777d45
       created: 1751144556061
-      modified: 1751144587407
+      modified: 1751146952879
       isPrivate: false
       sortKey: -1751144556061
     method: PUT
@@ -112,12 +112,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://ql7qqx6gy1.execute-api.us-east-1.amazonaws.com/tasks/c4bfaf62-8ad4-4f34-9ec4-698b0532b3c3
+  - url: "{{ _.baseURL }}/tasks/c4bfaf62-8ad4-4f34-9ec4-698b0532b3c3"
     name: Delete
     meta:
       id: req_4a8f8197ae0f43849251e357a97b0d9f
       created: 1751144620720
-      modified: 1751144634707
+      modified: 1751146942859
       isPrivate: false
       sortKey: -1751144620720
     method: DELETE
@@ -143,7 +143,7 @@ environments:
   meta:
     id: env_c655765831770dc61b68cbb221cb9eb8ce296fe3
     created: 1751125183299
-    modified: 1751125432726
+    modified: 1751146914774
     isPrivate: false
   data:
-    aws: "{https://u4edhehimekepy2rtmvpfnol4m0yxsmi.lambda-url.us-east-1.on.aws/}"
+    baseURL: https://ql7qqx6gy1.execute-api.us-east-1.amazonaws.com
