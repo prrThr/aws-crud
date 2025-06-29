@@ -5,14 +5,14 @@ meta:
   created: 1751125183298
   modified: 1751125183298
 collection:
-  - url: "{{ _.baseURL }}/tasks/f2f27f9b-d9e6-4955-92ff-5962070cf8d7"
+  - url: "{{ _.baseURL }}/tasks/<id-do-item>"
     name: Get
     meta:
       id: req_fb4647a4aa384320bbeeee019469dc01
       created: 1751143459676
-      modified: 1751146977804
+      modified: 1751224781449
       isPrivate: false
-      sortKey: -1751143459676
+      sortKey: -1751144620795
     method: GET
     body:
       mimeType: application/json
@@ -29,14 +29,14 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.baseURL }}/tasks/date?date=2025-06-27"
+  - url: "{{ _.baseURL }}/tasks/date?date=yyyy-mm-dd"
     name: Get Date
     meta:
       id: req_c30c8d0210ba45a8b5b27938618fd0de
       created: 1751144207314
-      modified: 1751146972208
+      modified: 1751224777123
       isPrivate: false
-      sortKey: -1751144207314
+      sortKey: -1751144620782.5
     method: GET
     headers:
       - name: User-Agent
@@ -54,16 +54,16 @@ collection:
     meta:
       id: req_ea54ee3c3c4746f29826c087e4928e41
       created: 1751144323275
-      modified: 1751146962111
+      modified: 1751224246162
       isPrivate: false
-      sortKey: -1751144323275
+      sortKey: -1751144620820
     method: POST
     body:
       mimeType: application/json
       text: |
         {
-          "title": "Inserido via Insomnia",
-          "description": "Descrição Insomnia",
+          "title": "Terceiro Novo item",
+          "description": "Apresentando o CREATE3",
           "date": "2025-06-28"
         }
     parameters:
@@ -82,22 +82,22 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.baseURL }}/tasks/c4bfaf62-8ad4-4f34-9ec4-698b0532b3c3"
+  - url: "{{ _.baseURL }}/tasks/<id-do-item>"
     name: Update
     meta:
       id: req_6ed9539f487743e4b353690d7c777d45
       created: 1751144556061
-      modified: 1751146952879
+      modified: 1751224771215
       isPrivate: false
-      sortKey: -1751144556061
+      sortKey: -1751144620770
     method: PUT
     body:
       mimeType: application/json
       text: |-
         {
-          "title": "Título Atualizado",
-          "description": "Descrição atualizada com sucesso",
-          "date": "2025-06-30"
+          "title": "Atualizando segundo item",
+          "description": "Apresentando o UPDATE",
+          "date": "2025-06-29"
         }
     headers:
       - name: Content-Type
@@ -112,12 +112,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.baseURL }}/tasks/c4bfaf62-8ad4-4f34-9ec4-698b0532b3c3"
+  - url: "{{ _.baseURL }}/tasks/<id-do-item>"
     name: Delete
     meta:
       id: req_4a8f8197ae0f43849251e357a97b0d9f
       created: 1751144620720
-      modified: 1751146942859
+      modified: 1751224764209
       isPrivate: false
       sortKey: -1751144620720
     method: DELETE

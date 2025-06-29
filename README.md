@@ -1,5 +1,8 @@
 # CRUD de Tarefas com AWS (Lambda, DynamoDB, API Gateway, IAM)
 
+- [Vídeo de apresentação e funcionamento](https://youtu.be/XPwCVHYno70)
+- **Alunos:** Arthur de Oliveira Pereira, Gabriel Victor Garcia Teixeira, Gustavo Pedrini, Igor do Carmo, Maria Eduarda Pierri e Ludmila Lais Souza Alves
+
 ## Pré-requisitos
 
 - Conta na AWS com Free Tier ativa
